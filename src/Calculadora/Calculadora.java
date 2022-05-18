@@ -54,4 +54,9 @@ public class Calculadora {
         }
         return iguales;
     }
+
+    public boolean equals2 (Object o) {
+        return o!= null && getClass() ==  o.getClass() && nombreCalculadora.equals(((Calculadora)o).nombreCalculadora)
+                && Arrays.equals(numeros, ((Calculadora)o).numeros);
+    }
 }
